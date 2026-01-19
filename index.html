@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tailwind.init.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>B13| ASSIGNMENT 2</title>
   </head>
   <body class="inter-font">
@@ -205,7 +207,7 @@
           <p><img src="./images/clock.png" alt="time" />6 min</p>
         </div>
       </section>
-      <section>
+      <section class="bg-[rgb(26,11,46)]">
         <h3>Meet the Host</h3>
         <div>
           <img src="./images/host.png" alt="host" />
@@ -221,30 +223,38 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer
+      class="bg-[url(/images/footer-bg.png)] bg-cover w-100% h-[412px] flex flex-col justify-center items-center space-y-8"
+    >
       <div>
         <img src="./images/TechWave.png" alt="h3" />
       </div>
-      <div>
-        <div>
-          <img src="./images/spotify.png" alt="logo" />
-          <h4>Spotify</h4>
+      <div class="flex space-x-10">
+        <div class="flex space-x-2">
+          <img src="./images/spotify.png" alt="logo" class="h-5.5 w-6" />
+          <h4 class="font-medium text-white">Spotify</h4>
         </div>
-        <div>
-          <img src="./images/apple-podcast.png" alt="logo" />
-          <h4>Apple podcast</h4>
+        <div class="flex space-x-2">
+          <img src="./images/apple-podcast.png" alt="logo" class="h-5.5 w-6" />
+          <h4 class="font-medium text-white">Apple podcast</h4>
         </div>
-        <div>
-          <img src="./images/youtube-podcast.png" alt="logo" />
-          <h4>Youtube</h4>
+        <div class="flex space-x-2">
+          <img
+            src="./images/youtube-podcast.png"
+            alt="logo"
+            class="h-5.5 w-6"
+          />
+          <h4 class="font-medium text-white">Youtube</h4>
         </div>
-        <div>
-          <img src="./images/twitter.png" alt="logo" />
-          <h4>Twitter</h4>
+        <div class="flex space-x-2">
+          <img src="./images/twitter.png" alt="logo" class="h-5.5 w-6" />
+          <h4 class="font-medium text-white">Twitter</h4>
         </div>
       </div>
       <div>
-        <p>© 2026 TechWave Podcast. All rights reserved.</p>
+        <p class="text-[#fafafa]">
+          © 2026 TechWave Podcast. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
