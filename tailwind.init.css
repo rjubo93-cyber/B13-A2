@@ -4,3 +4,7 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+@theme {
+  --breakpoint-sm: 576px;
+  --breakpoint-lg: 992px;
+}
