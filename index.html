@@ -10,40 +10,58 @@
   </head>
   <body class="inter-font">
     <header>
-      <nav>
-        <div><img src="./images/TechWave.png" alt="" /></div>
-        <div class="menu-items">
-          <ul>
-            <li>About</li>
-            <li>Episodes</li>
-            <li>Host</li>
+      <nav class="bg-[#1a0b2e] h-[92px] flex border-b border-[#878787]/20">
+        <div
+          class="max-w-[80%] mx-auto w-full flex justify-between items-center"
+        >
+          <img src="./images/TechWave.png" alt="logo" class="h-8 w-[219px]" />
+          <ul class="hidden md:flex items-center gap-8">
+            <li class="text-white font-medium">About</li>
+            <li class="text-white font-medium">Episodes</li>
+            <li class="text-white font-medium">Host</li>
           </ul>
-        </div>
-        <div class="button">
-          Subscribe <img src="./images/next.png" alt="right arrow" />
-        </div>
-        <div>
-          <img src="./images/hamburger-menu.png" alt="hamburger-menu" />
+          <button
+            class="hidden md:flex items-center gap-[6.5px] bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-[12.5px] px-4 rounded-3xl"
+          >
+            <p class="text-white font-semibold">Subscribe</p>
+            <img
+              src="./images/next.png"
+              alt="right arrow"
+              class="w-[15px] h-[12.5px]"
+            />
+          </button>
+          <img
+            src="./images/hamburger-menu.png"
+            alt="hamburger-menu"
+            class="block md:hidden"
+          />
         </div>
       </nav>
-      <div class="banner-section">
+
+      <div class="bg-[url(/images/hero-bg.png)] bg-cover w-100% h-[760px]">
         <div>
           <div><img src="./images/hero-circle.png" alt="1" /></div>
           <div><img src="./images/microphone.png" alt="2" /></div>
           <div><img src="./images/new.png" alt="3" /></div>
         </div>
         <div>
-          <h2>TechWave</h2>
-          <p>
+          <h2 class="text-[60px] text-white font-extrabold text-center">
+            TechWave
+          </h2>
+          <p class="text-white opacity-70 text-center">
             Your daily dose of tech insights, productivity hacks, and personal
             growth
           </p>
         </div>
-        <div>
+        <div class="flex gap-2 items-center justify-center">
           <button>
-            <img src="./images/spotify.png" alt="btn" />Listen on Spotify
+            <img src="./images/spotify.png" alt="btn" />
+            <p class="text-white font-semibold">Listen on Spotify</p>
           </button>
-          <button><img src="./images/message.png" alt="btn" />Subscribe</button>
+          <button>
+            <img src="./images/message.png" alt="btn" />
+            <p>Subscribe</p>
+          </button>
         </div>
       </div>
     </header>
@@ -68,9 +86,7 @@
               start their day with TechWave.
             </p>
           </div>
-          <hr
-            class="border-t border-[#878787] border-[0.1px] opacity-20 my-20"
-          />
+          <hr class="border-t border-[#878787] opacity-20 my-20" />
           <div class="grid grid-cols-4 text-center">
             <div>
               <h2 class="text-[48px] font-black text-[#00ff88] mb-1">150K+</h2>
@@ -335,7 +351,7 @@
       </section>
     </main>
     <footer
-      class="bg-[url(/images/footer-bg.png)] bg-cover w-100% h-[412px] flex flex-col justify-center items-center space-y-8"
+      class="bg-[url(./images/footer-bg.png)] bg-cover w-100% h-[412px] flex flex-col justify-center items-center space-y-8"
     >
       <div>
         <img src="./images/TechWave.png" alt="h3" />
